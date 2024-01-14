@@ -3,7 +3,6 @@ using namespace std;
  
 int main() {
 	string str,temp="";
-	int left=0;
  	cin>>str;
  	for(int i=0;i<str.length();i++){
  		if( str[i]=='A' || str[i]=='E' || str[i]=='I' || str[i]=='O' || str[i]=='U' || str[i]=='Y' ||
@@ -13,7 +12,6 @@ int main() {
 			str[i]+=32;
 		temp+=str[i];
 	}
-	for(int i=0;i<temp.length();i++){
+	for(int i=0;i<temp.length();i++)
 		cout<<'.'<<temp[i];
-	}
 }
