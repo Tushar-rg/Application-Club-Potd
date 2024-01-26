@@ -2,8 +2,7 @@ class Solution {
 public:
     long long dividePlayers(vector<int>& skill) {
         sort(skill.begin(),skill.end());
-        int n = skill.size();
-        int chem = skill[0] + skill[n-1];
+        int n = skill.size(), chem = skill[0] + skill[n-1];
         long sum = 0;
         for(int i=0;i<n;i++)
             cout<<skill[i]<<" ";
